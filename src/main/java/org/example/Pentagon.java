@@ -1,8 +1,7 @@
 package org.example;
 
-public class Pentagon implements Shape{
-    @Override
-    public void shapeName() {
-        System.out.println("Pentagon");
+public class Pentagon extends Shape {
+    public Pentagon(String name) {
+        super(name);
     }
 }

@@ -1,5 +1,14 @@
 package org.example;
 
-public interface Shape {
-    void shapeName();
+public abstract class Shape implements Printable {
+    protected String name;
+
+    public Shape(String name) {
+        this.name = name;
+    }
+
+    public void printName() {
+        System.out.println(this.name);
+    }
 }
+
